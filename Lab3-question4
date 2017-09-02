@@ -5,10 +5,10 @@ int main() {
 	int num;
 	cout <<"Enter a number\n";
 	cin >>num;
-	if (num/5==1)
+	if (num%5==0)
 	cout <<"The number is divisible by five\n";
 	else
-	if (num/11==1)
+	if (num%11==0)
 	cout <<"The number is divisble by 11\n";
 	else
 	cout <<"The number is not divisible by either five or eleven";
