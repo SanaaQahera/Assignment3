@@ -1,0 +1,23 @@
+    #include <iostream>
+    using namespace std;
+     
+    int main() {
+    	int wknum;
+    	cout <<"Enter number of the day in a week\n";
+    	cin >>wknum;
+    	if (wknum == 1)
+    	cout <<"Sunday";
+    	if (wknum == 2)
+    	cout <<"Monday";
+    	if (wknum == 3)
+    	cout <<"Tuesday";
+    	if (wknum == 4)
+    	cout <<"Wednesday";
+    	if (wknum == 5)
+    	cout <<"Thursday";
+    	if (wknum == 6)
+    	cout <<"Friday";
+    	if (wknum == 7)
+    	cout <<"Saturday";
+    	return 0;
+    }
