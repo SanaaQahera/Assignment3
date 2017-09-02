@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	
+	
+	int a,b,big;
+	cout <<"Enter two numbers\n";
+	cin >>a >>b;
+	if("a>b");
+	{
+		big = a;
+	}
+	 if("b>>a");
+	{
+		big = b;
+	}
+	cout <<"The bigger number is = " <<big;
+	return 0;
+}
