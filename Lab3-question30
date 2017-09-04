@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int i,n,m,mult;
+	cout <<"Enter number whose multiplication table must be displayed\n";
+	cin >>m;
+	cout <<"Enter number up to which table should be displayed\n";
+	cin >>n;
+	i=1;
+	while(i<=n)
+	{
+		mult = m*i;
+		cout <<m <<" X " <<i <<" = " <<mult <<endl;
+		i = i+1;
+	}
+	return 0;
+}
