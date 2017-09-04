@@ -7,7 +7,7 @@ int main() {
 	cout <<"Enter an alphabet\n";
 	cin >>a;
 	if (a>='a' && a<='z'||a<='A' && a>='Z')
-	cout <<a <<" is a character";
+	cout <<a <<" is an alphabet";
 	else
 	cout <<a <<" is not an alphabet";
 	return 0;
