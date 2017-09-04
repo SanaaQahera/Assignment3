@@ -16,6 +16,7 @@ int main() {
 		else
 		break;
 	}
+	
 	while(amt>0)
 	{
 		if (amt-500>=0)
@@ -26,6 +27,7 @@ int main() {
 		else 
 		break;
 	}
+	
 	while(amt>0)
 	{
 		if (amt-100>=0)
@@ -36,6 +38,7 @@ int main() {
 		else
 		break;
 	}
+	
 	while(amt>0)
 	{
 		if (amt-50>=0)
@@ -47,6 +50,7 @@ int main() {
 		else 
 		break;
 	}
+	
 	while(amt>0)
 	{
 		if (amt-20>=0)
@@ -57,6 +61,7 @@ int main() {
 		else
 		break;
 	}
+	
 	while(amt>0)
 	{
 		if (amt-10>=0)
@@ -68,6 +73,7 @@ int main() {
 		break;
 		
 	}
+	
 	while(amt>0)
 	{
 		if (amt-5>=0)
@@ -78,6 +84,7 @@ int main() {
 		else
 		break;
 		}
+		
 		cout <<"The number of notes = " <<num;
 	
 	return 0;
