@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+	
+	int num,fd,ld,dig,div,sum;
+	cout <<"Enter the number\n";
+	cin >>num;
+	ld = num%10;
+	cout <<"The last digit of the number = "<<ld <<endl;
+	dig = 0;
+	while (num/10>1)
+	{
+	  num = num/10;
+	  dig = dig+1;
+	}
+	
+	div = pow(10,div);
+	fd = num/div;
+	cout <<"The first digit = "<<fd <<endl;
+	sum = fd+ld;
+	cout <<"The sum of first and last digit is = "<<sum;
+	return 0;
+}
