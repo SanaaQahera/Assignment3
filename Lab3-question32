@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+	
+	int num,fd,ld,dig,div;
+	cout <<"Enter the number\n";
+	cin >>num;
+	ld = num%10;
+	cout <<"The last digit of the number = "<<ld <<endl;
+	dig = 0;
+	while (num/10>1)
+	{
+	  num = num/10;
+	  dig = dig+1;
+	}
+	
+	div = pow(10,div);
+	fd = num/div;
+	cout <<"The first digit = "<<fd;
+	
+	return 0;
+}
