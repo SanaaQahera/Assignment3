@@ -7,7 +7,7 @@ int main() {
 	cout <<"Enter the number\n";
 	cin >>n;
 	dig = 1;
-	while (n/10>0)
+	while (n/10>1)
 	{
 		n = n/10;
 		dig = dig+1;
