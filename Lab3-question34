@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+	
+	int n,fd,ld,pw,dig,temp,mid,swap;
+	cout <<"Enter a number\n";
+	cin >>n;
+	dig = 0;
+	temp = n/10;
+	while(temp>1)
+	{ 
+	temp = temp/10;
+	dig = dig+1;
+	}
+	
+	ld = n%10;
+	pw = pow(10,dig);
+	mid = n%pw;
+	fd = n/pw;
+	mid = mid-ld;
+	swap = (ld*pw)+mid+fd;
+	cout <<"The number is = "<<swap;
+	return 0;
+}
