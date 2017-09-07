@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n,sum,add,ext;
+	sum = 0;
+	cout <<"Enter the number\n";
+	cin >>n;
+	while(n/10>0)
+	{
+		add = n%10;
+		n = n/10;
+		sum = sum+add;
+	}
+	ext = n/1;
+	sum = sum+ext;
+	cout <<"The sum of digits = " <<sum;
+	return 0;
+}
