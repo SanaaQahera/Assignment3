@@ -1,0 +1,21 @@
+int n1,n2,mult,i;
+	mult = 1;
+	i = 2;
+	cout <<"Enter two numbers\n";
+	cin >>n1>>n2;
+	for (i=2; n1>1||n2>1; i++)
+	{
+		while(n1%i==0 || n2%i==0)
+		{
+	
+			mult = mult*i;
+			if (n1%i==0)
+			n1 = n1/i;
+			if (n2%i==0)
+			n2 = n2/i;
+		}
+		
+	}
+	cout <<"The lowest common multiple is = "<<mult;
+	return 0;
+}
