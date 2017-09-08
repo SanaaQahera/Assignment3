@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int n,rem,temp,a,b,freq;
+    int i =0;
+    int check = n;
+    cout <<"Enter a number\n";
+    cin >>n;
+    rem = n;
+    
+    while(n>1)
+    {
+    	temp = rem;
+    	
+    	a = n%10;
+    	if (a != check)
+    	{
+    	while(temp>1)
+    	{
+    		b = temp%10;
+                        if (b==a)
+                        {
+    		i = i+1;
+                        }
+    		temp = temp/10;
+    		check = a;
+    	}
+    	freq = i;
+    	cout <<"The frequency of "<<a <<" = " <<freq <<endl;
+    	
+    	
+    	}
+    	n = n/10;
+    	i = 0;
+    }
+	return 0;
+}
