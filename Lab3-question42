@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	
+	int n,i,pw,exp;
+	cout <<"Enter a number\n";
+	cin >>n;
+	cout <<"Enter exponent\n";
+	cin >>exp;
+	pw = n;
+	for(i=1; i<exp; i++)
+	{
+		pw = pw*n;
+	}
+	cout <<"The power is = " <<pw;
+	return 0;
+}
