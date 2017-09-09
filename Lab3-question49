@@ -1,0 +1,19 @@
+bool pri;
+	cout <<"Enter a number upto which prime numbers must be printed\n";
+	cin >>n;
+	cout <<"The prime numbers are :\n2"<<endl;
+	for(i=3; i<=n; i++)
+	{
+		pri = true;
+		for(j=2; j<i; j++)
+		{
+		if (i%j==0)
+	{	pri = false;
+		break;
+	}
+		}
+		if (pri == true)
+		cout <<i <<endl;
+	}
+	return 0;
+}
