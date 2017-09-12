@@ -12,6 +12,7 @@ int main() {
 	for(i=1; i<=n; i++)
 	{
 		num = i;
+		sum = 0;
 		while(num>1)
 	{
 		dig = num%10;
