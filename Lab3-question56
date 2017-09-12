@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n,i,j,fact,sum,d,check;
+	cout <<"Enter a number upto which strong numbers must be printed\n";
+	cin >>n;
+	cout <<"Strong numbers are : \n";
+	for(i=1;i<=n;i++)
+	{
+		check = i;
+	
+		sum = 0;
+		while(check>0)
+		{
+	                        fact = 1;
+			d = check%10;
+			for(j=1;j<=d;j++)
+			{
+				fact = fact*j;
+			}
+			sum = sum+fact;
+			check = check/10;
+		}
+		if (sum == i)
+		cout <<i <<endl;
+	}
+	return 0;
+}
