@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n,fib1,fib2,fib3,i;
+	cout <<"Enter number upto which Fibonacci series must be printed\n";
+	cin >>n;
+	cout <<"Fibonacci series : \n0\n1\n1\n2\n";
+	fib1 = 1;
+	fib2 = 2;
+	for(i=1;i<=n-4;i++)
+	{
+		fib3 = fib1+fib2;
+		cout <<fib3 <<endl;
+		fib1 = fib2;
+		fib2 = fib3;
+	}
+	return 0;
+}
