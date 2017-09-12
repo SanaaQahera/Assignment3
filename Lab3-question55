@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	
+	int n,fact,sum,d,i,ver;
+	sum = 0;
+	fact = 1;
+	cout <<"Enter a number\n";
+	cin >>n;
+	ver = n;
+	while(n>0)
+	{
+              fact = 1;		
+	  d = n%10;
+	  for(i=1;i<=d;i++)
+	  {
+	  	fact = fact*i;
+	  }
+	 
+	  sum = sum+fact;
+	  n = n/10;
+	}
+	cout <<sum <<endl;
+	if (sum==ver)
+	cout <<"Number is a strong number";
+	else
+	cout <<"Number is not a strong number";
+	return 0;
+}
