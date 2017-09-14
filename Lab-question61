@@ -3,7 +3,7 @@
      
     int main() {
      
-        int bin, oct,rem,i;
+        int bin, dec,rem,i;
         oct = 0;
         i = 1;
         cout <<"Enter a number in binary\n";
@@ -11,10 +11,10 @@
         while(bin>0)
         {
         	rem = bin%10;
-        	oct = oct+rem*i;
+        	dec = dec+rem*i;
         	i = i*2;
         	bin = bin/10;
         }
-        cout <<"The octal value of number is "<<oct;
+        cout <<"The decimal value of number is "<<dec;
     	return 0;
     }
