@@ -1,0 +1,20 @@
+    #include <iostream>
+    using namespace std;
+     
+    int main() {
+     
+        int bin, oct,rem,i;
+        oct = 0;
+        i = 1;
+        cout <<"Enter a number in binary\n";
+        cin >>bin;
+        while(bin>0)
+        {
+        	rem = bin%10;
+        	oct = oct+rem*i;
+        	i = i*2;
+        	bin = bin/10;
+        }
+        cout <<"The octal value of number is "<<oct;
+    	return 0;
+    }
