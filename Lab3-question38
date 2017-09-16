@@ -10,14 +10,14 @@ int main() {
 	cout <<"Enter the number\n";
 	cin >>n;
 	dig = 0;
-	temp = n/10;
+	temp = n;
 	while(temp>1)
 	{
 		temp = n/10;
 		dig = dig+1;
 	}
 	cout <<dig <<endl;
-	while(n/10>1)
+	while(n>1)
 	{
 	num = n%10;
 	rev = rev+(num*pow(10,dig));
